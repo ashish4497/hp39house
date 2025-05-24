@@ -1,0 +1,126 @@
+.room-card {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.3s ease;
+}
+
+.room-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.room-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate((-50%, -50%)); */
+}
+
+/* Show the button only on hover, if hasButton is true */
+.room-card.hover-enabled:hover .room-button {
+  opacity: 1;
+}
+
+.room-info h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.room-info p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.room-icons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.room-icons img {
+  width: 16px;
+  height: 16px;
+}
+
+.room-card {
+  background-size: cover;
+  background-position: center;
+  height: 360px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover {
+  transform: scale(1.02);
+}
+
+.room-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.room-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.room-card.hover-enabled:hover .room-button {
+  opacity: 1;
+}
+
+.room-info h3 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.room-info p {
+  font-size: 14px;
+  margin: 4px 0 0;
+  font-weight: 400;
+}
+
+.room-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.room-icons img {
+  width: 16px;
+  height: 16px;
+}

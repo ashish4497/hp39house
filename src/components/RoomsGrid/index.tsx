@@ -1,5 +1,5 @@
 import "./style.css";
-import { rooms, Room } from "./roomsData";
+import { rooms, type Room } from "./roomsData";
 import RoomCard from "../RoomCard";
 
 const RoomsGrid = () => {

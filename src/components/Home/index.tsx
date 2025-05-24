@@ -1,8 +1,8 @@
 import "./style.css";
-import Facilities from "../Facilities/Facilities";
+import Facilities from "../Facilities";
 import FacilitySection from "../../Pages/FacilitySection";
-import RoomsGrid from "../RoomsGrid/RoomsGrid";
-import BannerSection from "../BannerSection/BannerSection";
+import RoomsGrid from "../RoomsGrid";
+import BannerSection from "../BannerSection";
 
 export default function Home() {
   return (

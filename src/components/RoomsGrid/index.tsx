@@ -1,6 +1,6 @@
 import "./style.css";
-import { rooms } from "../RoomsGrid/roomsData";
-import RoomCard from "../RoomCard/RoomCard";
+import { rooms } from "./roomsData";
+import RoomCard from "../RoomCard";
 
 const RoomsGrid = () => {
   return (

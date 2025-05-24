@@ -1,6 +1,5 @@
-import React from "react";
 import "./style.css";
-import { rooms } from "./roomsData";
+import { rooms } from "../RoomsGrid/roomsData";
 import RoomCard from "../RoomCard/RoomCard";
 
 const RoomsGrid = () => {

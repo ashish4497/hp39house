@@ -1,7 +1,7 @@
-import React from 'react';
-import './style.css';
-import { rooms } from './roomsData';
-import RoomCard from '../RoomCard/RoomCard';
+import React from "react";
+import "./style.css";
+import { rooms } from "./roomsData";
+import RoomCard from "../RoomCard/RoomCard";
 
 const RoomsGrid = () => {
   return (

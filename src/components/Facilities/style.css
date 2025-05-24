@@ -57,3 +57,51 @@
   color: #777;
   line-height: 1.6;
 }
+
+/* Tablet View (≤1024px) */
+@media (max-width: 1024px) {
+  .facilities-section {
+    padding: 60px 20px;
+  }
+
+  .facilities-header .title {
+    font-size: 30px;
+  }
+
+  .facility-card {
+    padding: 25px;
+  }
+}
+
+/* Mobile View (≤767px) */
+@media (max-width: 767px) {
+  .facilities-section {
+    padding: 40px 15px;
+  }
+
+  .facilities-header .subtitle {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .facilities-header .title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .facility-card {
+    padding: 20px;
+  }
+
+  .facility-card .icon {
+    font-size: 32px;
+  }
+
+  .facility-card h3 {
+    font-size: 18px;
+  }
+
+  .facility-card p {
+    font-size: 13px;
+  }
+}

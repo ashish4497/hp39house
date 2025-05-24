@@ -201,3 +201,107 @@
   font-size: 1.25rem;
   color: #000;
 }
+
+/* Tablet View (≤1024px) */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+
+  .headline {
+    font-size: 2.2rem;
+  }
+
+  .hero-features {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero-cta {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile View (≤767px) */
+@media (max-width: 767px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .hero-left,
+  .hero-right {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .floating-card {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .floating-card h3 {
+    font-size: 1rem;
+  }
+
+  .floating-card p {
+    font-size: 0.8rem;
+  }
+
+  .play-button {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .play-button button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .headline {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .subtitle,
+  .description {
+    text-align: center;
+  }
+
+  .hero-features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    justify-content: center;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .discover-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .booking-info {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .booking-info p,
+  .booking-info strong {
+    font-size: 1rem;
+  }
+}

@@ -22,3 +22,43 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .rooms-section {
+    padding: 40px 20px;
+  }
+  
+  .rooms-section .heading h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .rooms-section .heading span {
+    font-size: 13px;
+  }
+  
+  .rooms-grid {
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .rooms-section {
+    padding: 30px 15px;
+  }
+  
+  .rooms-section .heading h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .rooms-section .heading span {
+    font-size: 12px;
+  }
+  
+  .rooms-grid {
+    gap: 16px;
+  }
+}

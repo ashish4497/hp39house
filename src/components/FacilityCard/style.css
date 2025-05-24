@@ -68,3 +68,82 @@
   background: #c2a771;
   color: white;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .facility-row {
+    margin: 40px 0;
+    padding: 15px;
+  }
+
+  .facility-content {
+    padding: 30px 20px;
+  }
+
+  .facility-content h2 {
+    font-size: 28px;
+  }
+
+  .facility-content p {
+    font-size: 14px;
+  }
+
+  .discover-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .facility-row {
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 15px 10px;
+  }
+
+  /* On mobile, stack vertically with image first (default) */
+  .facility-row:not(.reverse) .facility-image,
+  .facility-row.reverse .facility-content {
+    order: 1;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* On mobile, stack vertically with content second (default) */
+  .facility-row:not(.reverse) .facility-content,
+  .facility-row.reverse .facility-image {
+    order: 2;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .facility-image img {
+    border-radius: 6px;
+  }
+
+  .facility-content {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .facility-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .facility-content p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .discover-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

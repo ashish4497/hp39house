@@ -1,15 +1,19 @@
+import { useState } from "react";
 import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
   FaYoutube,
   FaMapMarkerAlt,
-  FaSearch,
   FaBars,
+  FaTimes, // ✅ Added missing import
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Logo from "../assets/39houselogo.jpg";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
       {/* Top bar */}
@@ -29,28 +33,40 @@ const Header = () => {
 
       {/* Navbar */}
       <nav className="navbar">
-        <img src="/logo.png" alt="Hoexr Logo" className="logo" />
-        <ul className="nav-links">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/rooms">Rooms & Suites</Link>
-          </li>
-          <li>
-            <Link to="/pages">Pages</Link>
-          </li>
-          <li>
-            <Link to="/news">News</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-        <div className="actions">
-          <FaSearch className="icon" />
-          <FaBars className="icon menu-icon" />
+        <img src={Logo} alt="Logo" className="logo" />
+
+        <div className={`nav-links-container ${menuOpen ? "open" : ""}`}>
+          <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+            <li>
+              <Link to="/" onClick={() => setMenuOpen(false)}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/rooms" onClick={() => setMenuOpen(false)}>
+                Rooms
+              </Link>
+            </li>
+          </ul>
+          <button className="btn booking" onClick={() => setMenuOpen(false)}>
+            Book Now
+          </button>
         </div>
+
+        {/* ✅ Toggle Hamburger / Close Icon */}
+        {menuOpen ? (
+          <FaTimes
+            className="menu-toggle"
+            onClick={() => setMenuOpen(false)}
+            aria-label="Close menu"
+          />
+        ) : (
+          <FaBars
+            className="menu-toggle"
+            onClick={() => setMenuOpen(true)}
+            aria-label="Open menu"
+          />
+        )}
       </nav>
     </header>
   );

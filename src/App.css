@@ -1,5 +1,4 @@
-@import "@fortawesome/fontawesome-free/css/all.min.css";
-
+/* ===== Base Styles ===== */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -7,24 +6,26 @@ body {
 }
 
 .header {
-  background: white;
+  background: #fff;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-/* Top Bar */
+/* ===== Top Bar ===== */
 .top-bar {
-  background: #0e1a1a;
-  color: white;
-  font-size: 14px;
-  padding: 8px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #0e1a1a;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  gap: 8px;
 }
 
-.top-bar .location, .top-bar .social {
+.top-bar .location,
+.top-bar .social {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -34,18 +35,27 @@ body {
   margin-right: 5px;
 }
 
-/* Navbar */
+/* ===== Navbar ===== */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
   border-bottom: 1px solid #eee;
-  background-color: white;
+  position: relative;
 }
 
-.navbar .logo {
-  height: 50px;
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* ===== Nav Links ===== */
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .nav-links {
@@ -54,73 +64,94 @@ body {
   gap: 30px;
   font-weight: 500;
   letter-spacing: 0.5px;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
   cursor: pointer;
   transition: color 0.3s;
 }
+
 .nav-links a {
   text-decoration: none;
   color: inherit;
+  display: block;
+  width: 100%;
 }
 
 .nav-links li:hover {
   color: #bfa37c;
 }
 
-.actions {
-  display: flex;
-  gap: 25px;
-}
-
-.icon {
-  font-size: 18px;
-  cursor: pointer;
-}
-
-/* Hero Section */
-.hero-section {
-  background: url('/background.jpg') center/cover no-repeat;
-  height: 400px;
-  position: relative;
-  color: white;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-title {
-  font-size: 64px;
+/* ===== Booking Button ===== */
+.booking {
+  border: 1px solid #bfa37c;
+  background: transparent;
+  color: #bfa37c;
   font-weight: 500;
-  margin: 0;
-}
-
-.breadcrumb {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-/* ====== */
-/* src/components/TopBar.css */
-.top-bar {
-  background: #0f1e21;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 80px;
-  font-size: 14px;
-}
-
-.social i {
-  margin-left: 10px;
   cursor: pointer;
 }
 
-/* ========== */
+.booking:hover {
+  color: #dfa95c;
+  border-color: #dfa95c;
+}
+
+/* ===== Menu Toggle Icon ===== */
+.menu-toggle {
+  font-size: 24px;
+  color: #333;
+  display: none;
+  cursor: pointer;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-links-container {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links-container.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .booking {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .top-bar {
+    font-size: 12px;
+  }
+}

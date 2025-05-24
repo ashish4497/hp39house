@@ -1,5 +1,5 @@
 import "./style.css";
-import { rooms } from "./roomsData";
+import { rooms, Room } from "./roomsData";
 import RoomCard from "../RoomCard";
 
 const RoomsGrid = () => {
@@ -10,7 +10,7 @@ const RoomsGrid = () => {
         <h2>Luxury Rooms & Suites</h2>
       </div>
       <div className="rooms-grid">
-        {rooms.map((room, index) => (
+        {rooms.map((room: Room, index: number) => (
           <RoomCard key={index} {...room} />
         ))}
       </div>

@@ -1,21 +1,20 @@
-import React from 'react';
-import './style.css';
+import "./style.css";
 import {
   FaConciergeBell,
   FaShuttleVan,
   FaWifi,
   FaCoffee,
   FaSwimmingPool,
-  FaCar
-} from 'react-icons/fa';
+  FaCar,
+} from "react-icons/fa";
 
 const facilities = [
-  { icon: <FaConciergeBell />, title: 'Room Service' },
-  { icon: <FaShuttleVan />, title: 'Pick Up & Drop' },
-  { icon: <FaWifi />, title: 'Fibre Internet' },
-  { icon: <FaCoffee />, title: 'Breakfast' },
-  { icon: <FaSwimmingPool />, title: 'Swimming Pool' },
-  { icon: <FaCar />, title: 'Parking Space' },
+  { icon: <FaConciergeBell />, title: "Room Service" },
+  { icon: <FaShuttleVan />, title: "Pick Up & Drop" },
+  { icon: <FaWifi />, title: "Fibre Internet" },
+  { icon: <FaCoffee />, title: "Breakfast" },
+  { icon: <FaSwimmingPool />, title: "Swimming Pool" },
+  { icon: <FaCar />, title: "Parking Space" },
 ];
 
 const Facilities = () => {

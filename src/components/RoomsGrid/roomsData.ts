@@ -10,7 +10,15 @@ import acIcon from "../../assets/banner01.jpg";
 import tvIcon from "../../assets/banner01.jpg";
 import serviceIcon from "../../assets/banner01.jpg";
 
-export const rooms = [
+export interface Room {
+  title: string;
+  price: string;
+  image: string;
+  hasButton?: boolean;
+  icons?: string[];
+}
+
+export const rooms: Room[] = [
   {
     title: "Junior Suite",
     price: "150$ / NIGHT",

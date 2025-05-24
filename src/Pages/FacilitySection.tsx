@@ -1,9 +1,8 @@
-import React from 'react';
-import FacilityCard from '../components/FacilityCard/FacilityCard';
+import FacilityCard from "../components/FacilityCard";
 
-import gymImage from '../assets/banner01.jpg';
-import restaurantImage from '../assets/banner01.jpg';
-import spaImage from '../assets/banner01.jpg';
+import gymImage from "../assets/banner01.jpg";
+import restaurantImage from "../assets/banner01.jpg";
+import spaImage from "../assets/banner01.jpg";
 
 const FacilitySection = () => {
   return (
@@ -26,6 +25,7 @@ const FacilitySection = () => {
         subtitle="Experiences"
         description="Restaurant inlilla duiman at elit finibus viverra nec a lacus themo the nesuada senectus muspiciunt non sagie the ferment ziverra tristique duru the ivite dianne onenn nivami acesstion augue artine."
         image={spaImage}
+        reverse={undefined}
       />
     </div>
   );

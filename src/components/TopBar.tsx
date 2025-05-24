@@ -1,6 +1,4 @@
-// src/components/TopBar.jsx
-import React from 'react';
-import './TopBar.css';
+import "./TopBar.css";
 
 const TopBar = () => {
   return (

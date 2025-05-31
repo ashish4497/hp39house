@@ -9,7 +9,8 @@ import {
   FaTimes, // ✅ Added missing import
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { handleWhatsAppRedirect } from "../utils";
+// import { handleWhatsAppRedirect } from "../utils";
+import { message, phoneNumber } from "../constants";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,12 +49,18 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <button
-            className="btn booking"
-            onClick={() => handleWhatsAppRedirect()}
+          <a
+            href={`https://wa.me/${phoneNumber}?text=${message}`}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Book Now
-          </button>
+            <button
+              className="btn booking"
+              // onClick={() => handleWhatsAppRedirect()}
+            >
+              Book Now
+            </button>
+          </a>
         </div>
 
         {/* ✅ Toggle Hamburger / Close Icon */}

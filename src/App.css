@@ -105,6 +105,14 @@ body {
   display: none;
   cursor: pointer;
 }
+/* ===== visit Place Title ===== */
+
+.place-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 60px;
+  text-align: center;
+}
 
 /* ===== Responsive Styles ===== */
 @media (max-width: 768px) {
@@ -148,10 +156,18 @@ body {
     width: 100%;
     text-align: center;
   }
+  .place-title {
+    font-size: 24px;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 400px) {
   .top-bar {
     font-size: 12px;
+  }
+  .place-title {
+    font-size: 24px;
+    margin-top: 40px;
   }
 }

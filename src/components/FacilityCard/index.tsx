@@ -20,17 +20,19 @@ const FacilityCard: React.FC<FacilityCardProps> = ({
   reverse = false, // default to false
 }) => {
   return (
-    <div className={`facility-row ${reverse ? "reverse" : ""}`}>
-      <div className="facility-image">
-        <img src={image} alt={title} />
+    <>
+      <div className={`facility-row ${reverse ? "reverse" : ""}`}>
+        <div className="facility-image">
+          <img src={image} alt={title} />
+        </div>
+        <div className="facility-content">
+          <span className="subtitle">{subtitle}</span>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <button className="discover-btn">Discover More</button>
+        </div>
       </div>
-      <div className="facility-content">
-        <span className="subtitle">{subtitle}</span>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <button className="discover-btn">Discover More</button>
-      </div>
-    </div>
+    </>
   );
 };
 

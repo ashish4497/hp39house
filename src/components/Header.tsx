@@ -9,7 +9,8 @@ import {
   FaTimes, // ✅ Added missing import
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Logo from "../assets/39houselogo.jpg";
+import { handleWhatsAppRedirect } from "../utils";
+// import Logo from "../assets/39houselogo.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ const Header = () => {
 
       {/* Navbar */}
       <nav className="navbar">
-        <img src={Logo} alt="Logo" className="logo" />
+        {/* <img src={Logo} alt="Logo" className="logo" /> */}
 
         <div className={`nav-links-container ${menuOpen ? "open" : ""}`}>
           <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
@@ -48,7 +49,10 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <button className="btn booking" onClick={() => setMenuOpen(false)}>
+          <button
+            className="btn booking"
+            onClick={() => handleWhatsAppRedirect()}
+          >
             Book Now
           </button>
         </div>

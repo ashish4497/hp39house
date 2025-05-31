@@ -1,4 +1,4 @@
-import logo from "../../assets/39houselogo.jpg";
+// import logo from "../../assets/39houselogo.jpg";
 import "./style.css";
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-content">
         {/* Column 1 - Logo + About + Social */}
         <div className="footer-column">
-          <img src={logo} alt="Hotel Logo" className="footer-logo" />
+          {/* <img src={logo} alt="Hotel Logo" className="footer-logo" /> */}
           <p className="footer-text">
             Welcome to the best five-star deluxe hotel in Dharamshala. Hotel
             elementum sesue the aucan vestibulum aliquam justo in sapien rutrum

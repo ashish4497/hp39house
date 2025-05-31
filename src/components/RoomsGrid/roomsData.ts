@@ -1,7 +1,7 @@
-import juniorSuite from "../../assets/banner01.jpg";
-import familyRoom from "../../assets/banner01.jpg";
-import doubleRoom1 from "../../assets/banner01.jpg";
-import doubleRoom2 from "../../assets/banner01.jpg";
+import juniorSuite from "../../assets/bed01.jpeg";
+import familyRoom from "../../assets/bed02.jpeg";
+import doubleRoom1 from "../../assets/bed03.jpeg";
+import doubleRoom2 from "../../assets/bed04.jpeg";
 import deluxeRoom from "../../assets/banner01.jpg";
 
 // Replace with actual icon images
@@ -42,12 +42,6 @@ export const rooms: Room[] = [
     title: "Double Room",
     price: "250$ / NIGHT",
     image: doubleRoom2,
-    hasButton: true,
-  },
-  {
-    title: "Deluxe Room",
-    price: "300$ / NIGHT",
-    image: deluxeRoom,
     hasButton: true,
   },
 ];

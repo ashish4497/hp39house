@@ -25,7 +25,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className="room-overlay">
-        {hasButton && <button className="room-button">Book Now</button>}
+        {/* {hasButton && <button className="room-button">Book Now</button>} */}
         <div className="room-info">
           <h3>{title}</h3>
           <p>{price}</p>

@@ -9,7 +9,7 @@ import {
   FaTimes, // ✅ Added missing import
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { handleWhatsAppRedirect } from "../utils";
+// import { handleWhatsAppRedirect } from "../utils";
 import { message, phoneNumber } from "../constants";
 // import Logo from "../assets/39houselogo.jpg";
 

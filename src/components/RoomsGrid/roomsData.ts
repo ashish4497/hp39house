@@ -2,7 +2,7 @@ import juniorSuite from "../../assets/bed01.jpeg";
 import familyRoom from "../../assets/bed02.jpeg";
 import doubleRoom1 from "../../assets/bed03.jpeg";
 import doubleRoom2 from "../../assets/bed04.jpeg";
-import deluxeRoom from "../../assets/banner01.jpg";
+// import deluxeRoom from "../../assets/banner01.jpg";
 
 // Replace with actual icon images
 import wifiIcon from "../../assets/banner01.jpg";

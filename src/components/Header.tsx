@@ -10,7 +10,12 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { handleWhatsAppRedirect } from "../utils";
+import { message, phoneNumber } from "../constants";
 // import Logo from "../assets/39houselogo.jpg";
+
+const encodedMessage = encodeURIComponent(message);
+
+const waUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,12 +54,14 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <button
-            className="btn booking"
-            onClick={() => handleWhatsAppRedirect()}
-          >
-            Book Now
-          </button>
+          <a href={waUrl} target="_blank" rel="noopener noreferrer">
+            <button
+              className="btn booking"
+              // onClick={() => handleWhatsAppRedirect()}
+            >
+              Book Now
+            </button>
+          </a>
         </div>
 
         {/* ✅ Toggle Hamburger / Close Icon */}

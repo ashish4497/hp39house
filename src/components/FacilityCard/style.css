@@ -23,11 +23,12 @@
 .facility-image {
   flex: 1 1 50%;
   max-width: 600px;
+
 }
 
 .facility-image img {
   width: 100%;
-  height: auto;
+  height: 350px;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

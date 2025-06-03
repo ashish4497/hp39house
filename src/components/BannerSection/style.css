@@ -237,19 +237,18 @@
   }
 
   .floating-card {
-    /* position: static; */
-    width: 100%;
-    /* max-width: 100%; */
-    padding: 1rem;
+     width: 50%;
+    /* height: %; */
+     padding: 1rem;
     font-size: 0.9rem;
   }
 
   .floating-card h3 {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   .floating-card p {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 
   .play-button {

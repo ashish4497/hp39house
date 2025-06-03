@@ -21,26 +21,25 @@ export interface Room {
 export const rooms: Room[] = [
   {
     title: "Junior Suite",
-    price: "150$ / NIGHT",
+    price: "1700 / NIGHT",
     image: juniorSuite,
     hasButton: true,
   },
   {
     title: "Family Room",
-    price: "200$ / NIGHT",
+    price: "2500 / NIGHT",
     image: familyRoom,
     hasButton: true,
-    icons: [wifiIcon, acIcon, tvIcon, serviceIcon],
   },
   {
-    title: "Double Room",
-    price: "250$ / NIGHT",
+    title: "Single Room",
+    price: "2000 / NIGHT",
     image: doubleRoom1,
     hasButton: true,
   },
   {
     title: "Double Room",
-    price: "250$ / NIGHT",
+    price: "3500 / NIGHT",
     image: doubleRoom2,
     hasButton: true,
   },

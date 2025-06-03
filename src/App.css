@@ -119,6 +119,7 @@ body {
   .top-bar {
     flex-direction: column;
     align-items: flex-start;
+    display: none;
   }
 
   .navbar {
@@ -155,6 +156,7 @@ body {
   .booking {
     width: 100%;
     text-align: center;
+    padding: 0 12px;
   }
   .place-title {
     font-size: 24px;
@@ -165,6 +167,7 @@ body {
 @media (max-width: 400px) {
   .top-bar {
     font-size: 12px;
+    display: none;
   }
   .place-title {
     font-size: 24px;

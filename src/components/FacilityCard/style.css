@@ -1,149 +1,85 @@
-.facility-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 60px 0;
-  background: #f9f7f2;
-  padding: 20px;
-  border-radius: 6px;
-  overflow: hidden;
+/* Outer container for consistent page padding */
+.facility-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
+/* Main row layout */
+.facility-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* allows wrap on smaller devices */
+}
+
+/* Reverse layout when needed */
 .facility-row.reverse {
   flex-direction: row-reverse;
 }
 
+/* Image block */
 .facility-image {
   flex: 1 1 50%;
-  max-width: 40%;
+  max-width: 600px;
 }
 
 .facility-image img {
   width: 100%;
   height: auto;
-  display: block;
+  border-radius: 12px;
   object-fit: cover;
-  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Content block */
 .facility-content {
-  flex: 1 1 50%;
-  padding: 40px;
-  text-align: left;
+  flex: 1 1 40%;
+  max-width: 500px;
 }
 
-.subtitle {
-  font-size: 12px;
-  letter-spacing: 3px;
-  color: #a78c5d;
+.facility-content .subtitle {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 10px;
+  letter-spacing: 0.05em;
 }
 
 .facility-content h2 {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 1rem;
   color: #222;
-  margin-bottom: 20px;
 }
 
 .facility-content p {
-  font-size: 15px;
-  color: #666;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
-.discover-btn {
-  background: none;
-  border: 1px solid #c2a771;
-  color: #c2a771;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.discover-btn:hover {
-  background: #c2a771;
-  color: white;
-}
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .facility-row {
-    margin: 40px 0;
-    padding: 15px;
-  }
-
-  .facility-content {
-    padding: 30px 20px;
-  }
-
-  .facility-content h2 {
-    font-size: 28px;
-  }
-
-  .facility-content p {
-    font-size: 14px;
-  }
-
-  .discover-btn {
-    font-size: 13px;
-    padding: 8px 16px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
+/* Responsive layout */
+@media (max-width: 768px) {
   .facility-row {
     flex-direction: column;
-    margin: 30px 0;
-    padding: 15px 10px;
-  }
-
-  /* On mobile, stack vertically with image first (default) */
-  .facility-row:not(.reverse) .facility-image,
-  .facility-row.reverse .facility-content {
-    order: 1;
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  /* On mobile, stack vertically with content second (default) */
-  .facility-row:not(.reverse) .facility-content,
-  .facility-row.reverse .facility-image {
-    order: 2;
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .facility-image img {
-    border-radius: 6px;
-  }
-
-  .facility-content {
-    padding: 20px 10px;
     text-align: center;
   }
 
-  .subtitle {
-    font-size: 11px;
-    letter-spacing: 2px;
+  .facility-row.reverse {
+    flex-direction: column;
+  }
+
+  .facility-image,
+  .facility-content {
+    max-width: 100%;
   }
 
   .facility-content h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
   }
 
   .facility-content p {
-    font-size: 13px;
-    margin-bottom: 15px;
-  }
-
-  .discover-btn {
-    font-size: 14px;
-    padding: 10px 20px;
+    font-size: 0.95rem;
   }
 }

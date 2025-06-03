@@ -4,8 +4,8 @@ import {
   FaShuttleVan,
   FaWifi,
   FaCoffee,
-  FaSwimmingPool,
   FaCar,
+  FaMountain,
 } from "react-icons/fa";
 
 const facilities = [
@@ -13,7 +13,7 @@ const facilities = [
   { icon: <FaShuttleVan />, title: "Pick Up & Drop" },
   { icon: <FaWifi />, title: "Fibre Internet" },
   { icon: <FaCoffee />, title: "Breakfast" },
-  { icon: <FaSwimmingPool />, title: "Swimming Pool" },
+  { icon: <FaMountain />, title: "Mountain View" },
   { icon: <FaCar />, title: "Parking Space" },
 ];
 
@@ -21,8 +21,8 @@ const Facilities = () => {
   return (
     <section className="facilities-section">
       <div className="facilities-header">
-        <p className="subtitle">HOEXR SERVICES</p>
-        <h2 className="title">Hotel Facilities</h2>
+        <p className="subtitle">Incredible Stays</p>
+        <h2 className="title">HomeStay Facilities</h2>
       </div>
 
       <div className="facilities-grid">
@@ -31,8 +31,8 @@ const Facilities = () => {
             <div className="icon">{facility.icon}</div>
             <h3>{facility.title}</h3>
             <p>
-              Orci varius natoque penatibus magnis ders disney parturient
-              ridiculus
+              Big on warmth, rich in tradition your perfect homestay in
+              Himachal.
             </p>
           </div>
         ))}

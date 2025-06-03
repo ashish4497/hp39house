@@ -1,9 +1,10 @@
 import "./style.css";
-import banner from "../../assets/banner01.jpg";
-import { FaCouch, FaPlay } from "react-icons/fa";
+import banner from "../../assets/bg1.jpeg";
+import { FaCouch } from "react-icons/fa";
 import { PiSwimmingPoolBold } from "react-icons/pi";
 import { MdOutlineLight } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
+import { phoneNumber, message } from "../../constants";
 
 const BannerSection = () => {
   return (
@@ -16,25 +17,18 @@ const BannerSection = () => {
               <FaCouch size={36} color="#caa577" />
               <h3>Luxury Room</h3>
               <p>
-                Donec in quis the asd pellentesque velit. Donec id velit arcu
-                posuere blane.
+                Experience comfort and peace at our cozy homestay in
+                Dharamshala, Himachal Pradesh. Enjoy breathtaking mountain views
+                and warm hospitality in every corner.
               </p>
             </div>
-            <div className="play-button">
-              <button>
-                <FaPlay color="#fff" />
-              </button>
-            </div>
-          </div>
-          <div className="sub-image">
-            <img src={banner} alt="Dining Area" />
           </div>
         </div>
       </div>
 
       <div className="hero-right">
-        <h4 className="subtitle">HOEXR LUXURY HOTEL</h4>
-        <h1 className="headline">Most Safe & Rated Hotel in London.</h1>
+        <h4 className="subtitle">HOEXR LUXURY Homestay</h4>
+        <h1 className="headline">Most Safe & Rated Homestay in Dharamshala.</h1>
         <p className="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor
           incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
@@ -47,15 +41,22 @@ const BannerSection = () => {
           </div>
           <div className="feature">
             <PiSwimmingPoolBold size={36} color="lightgray" />
-            <span>The Best Swimming</span>
+            <span>Relax with the Best Mountain-View</span>
           </div>
         </div>
         <div className="hero-cta">
-          <button className="discover-button">DISCOVER MORE</button>
+          <a
+            href={`https://wa.me/${phoneNumber}?text=${message}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn booking">Book Now</button>
+          </a>
+
           <div className="booking-info">
             <FiPhoneCall size={28} color="#caa577" />
             <div>
-              <p>BOOKING NOW</p>
+              <p>Call Us</p>
               <strong>956 220 6666</strong>
             </div>
           </div>

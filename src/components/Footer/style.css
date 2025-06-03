@@ -25,20 +25,24 @@
   margin-bottom: 20px;
 }
 
+
+
 .social-icons i {
   border: 1px solid #fff;
   border-radius: 50%;
-  padding: 10px;
+  padding: 18px;
   margin-right: 10px;
   font-size: 14px;
   color: #fff;
   cursor: pointer;
   transition: 0.3s ease;
+
 }
 
 .social-icons i:hover {
   background: #b48b50;
   border-color: #b48b50;
+  
 }
 
 .footer-column h3 {

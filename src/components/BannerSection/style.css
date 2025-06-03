@@ -237,7 +237,7 @@
   }
 
   .floating-card {
-    position: static;
+    /* position: static; */
     width: 100%;
     /* max-width: 100%; */
     padding: 1rem;

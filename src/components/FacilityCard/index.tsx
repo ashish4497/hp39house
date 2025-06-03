@@ -7,7 +7,7 @@ interface FacilityCardProps {
   title: string;
   subtitle: string;
   description: string;
-  image: string; // If using import for image: string; (can also be JSX.Element)
+  image: string;
   reverse?: boolean;
 }
 
@@ -17,19 +17,20 @@ const FacilityCard: React.FC<FacilityCardProps> = ({
   subtitle,
   description,
   image,
-  reverse = false, // default to false
+  reverse = false,
 }) => {
   return (
     <>
-      <div className={`facility-row ${reverse ? "reverse" : ""}`}>
-        <div className="facility-image">
-          <img src={image} alt={title} />
-        </div>
-        <div className="facility-content">
-          <span className="subtitle">{subtitle}</span>
-          <h2>{title}</h2>
-          <p>{description}</p>
-          <button className="discover-btn">Discover More</button>
+      <div className="facility-container">
+        <div className={`facility-row ${reverse ? "reverse" : ""}`}>
+          <div className="facility-image">
+            <img src={image} alt={title} />
+          </div>
+          <div className="facility-content">
+            <span className="subtitle">{subtitle}</span>
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </div>
         </div>
       </div>
     </>

@@ -1,8 +1,9 @@
 import FacilityCard from "../components/FacilityCard";
 
-import gymImage from "../assets/banner01.jpg";
-import restaurantImage from "../assets/banner01.jpg";
-import spaImage from "../assets/banner01.jpg";
+import Temple from "../assets/lambatemp.jpg";
+import Curch from "../assets/curch.jpg";
+import Stadium from "../assets/dstadium.jpg";
+import BhagsuTemple from "../assets/bhaagsunag.webp";
 
 const FacilitySection = () => {
   return (
@@ -13,24 +14,30 @@ const FacilitySection = () => {
 
       <div className="facility-section">
         <FacilityCard
-          title="Fitness Center"
-          subtitle="Modern"
-          description="Restaurant inlilla dui nam at elit finibus viverra nec a lacus themo the nesuada senectus muspiciunt non sagie the ferment ziverra tristique duru the ivite dianne onenn nivami acesstion augue artine."
-          image={gymImage}
+          title="Dalai Lama Temple"
+          subtitle="Temple"
+          description="Restaurant inlilla dui nam at elit finibus viverra nec a lacus themo the nesuada senectus muspiciunt non sagie the ferment ziverra tristique duru the ivite dianne onenn nivami acesstion augue artine. "
+          image={Temple}
         />
         <FacilityCard
-          title="The Restaurant"
-          subtitle="Discover"
+          title="Himachal Pradesh Cricket Association Stadium"
+          subtitle="Stadium"
           description="Restaurant inlilla duiman at elit finibus viverra nec a lacus themo the nesuada senectus muspiciunt non sagie the ferment ziverra tristique duru the ivite dianne onenn nivami acesstion augue artine."
-          image={restaurantImage}
+          image={Stadium}
           reverse
         />
         <FacilityCard
-          title="Spa Center"
-          subtitle="Experiences"
+          title="Church of St. John in the Wilderness"
+          subtitle="Church"
           description="Restaurant inlilla duiman at elit finibus viverra nec a lacus themo the nesuada senectus muspiciunt non sagie the ferment ziverra tristique duru the ivite dianne onenn nivami acesstion augue artine."
-          image={spaImage}
-          reverse={undefined}
+          image={Curch}
+        />
+        <FacilityCard
+          title="Bhagsu Nag Temple"
+          subtitle="Temple"
+          description="Restaurant inlilla duiman at elit finibus viverra nec a lacus themo the nesuada senectus muspiciunt non sagie the ferment ziverra tristique duru the ivite dianne onenn nivami acesstion augue artine."
+          image={BhagsuTemple}
+          reverse
         />
       </div>
     </>

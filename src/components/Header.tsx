@@ -1,8 +1,8 @@
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaYoutube,
+  // FaFacebookF,
+  // FaTwitter,
+  // FaLinkedinIn,
+  // FaYoutube,
   FaMapMarkerAlt,
 } from "react-icons/fa";
 

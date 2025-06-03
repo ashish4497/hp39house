@@ -5,10 +5,10 @@ import doubleRoom2 from "../../assets/bed04.jpeg";
 // import deluxeRoom from "../../assets/banner01.jpg";
 
 // Replace with actual icon images
-import wifiIcon from "../../assets/banner01.jpg";
-import acIcon from "../../assets/banner01.jpg";
-import tvIcon from "../../assets/banner01.jpg";
-import serviceIcon from "../../assets/banner01.jpg";
+// import wifiIcon from "../../assets/banner01.jpg";
+// import acIcon from "../../assets/banner01.jpg";
+// import tvIcon from "../../assets/banner01.jpg";
+// import serviceIcon from "../../assets/banner01.jpg";
 
 export interface Room {
   title: string;

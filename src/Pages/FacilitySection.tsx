@@ -16,26 +16,26 @@ const FacilitySection = () => {
         <FacilityCard
           title="Dalai Lama Temple"
           subtitle="Temple"
-          description="Restaurant inlilla dui nam at elit finibus viverra nec a lacus themo the nesuada senectus muspiciunt non sagie the ferment ziverra tristique duru the ivite dianne onenn nivami acesstion augue artine. "
+          description="A serene and spiritual center located in McLeod Ganj, the Dalai Lama Temple is the residence of His Holiness the 14th Dalai Lama. Visitors can witness peaceful Tibetan rituals, prayer wheels, and scenic views of the mountains."
           image={Temple}
         />
         <FacilityCard
           title="Himachal Pradesh Cricket Association Stadium"
           subtitle="Stadium"
-          description="Restaurant inlilla duiman at elit finibus viverra nec a lacus themo the nesuada senectus muspiciunt non sagie the ferment ziverra tristique duru the ivite dianne onenn nivami acesstion augue artine."
+          description="One of the most beautiful cricket stadiums in the world, this venue offers a stunning backdrop of the Dhauladhar range. Perfect for cricket fans and photography lovers alike."
           image={Stadium}
           reverse
         />
         <FacilityCard
           title="Church of St. John in the Wilderness"
           subtitle="Church"
-          description="Restaurant inlilla duiman at elit finibus viverra nec a lacus themo the nesuada senectus muspiciunt non sagie the ferment ziverra tristique duru the ivite dianne onenn nivami acesstion augue artine."
+          description="Tucked away in the pine forest, this neo-Gothic Anglican church built in 1852 is known for its peaceful ambiance, stained-glass windows, and historical charm."
           image={Curch}
         />
         <FacilityCard
           title="Bhagsu Nag Temple"
           subtitle="Temple"
-          description="Restaurant inlilla duiman at elit finibus viverra nec a lacus themo the nesuada senectus muspiciunt non sagie the ferment ziverra tristique duru the ivite dianne onenn nivami acesstion augue artine."
+          description="Dedicated to Lord Shiva, Bhagsu Nag Temple is a sacred spot for both locals and tourists. A short trek from here leads you to the famous Bhagsu Waterfall — a must-visit for nature lovers."
           image={BhagsuTemple}
           reverse
         />

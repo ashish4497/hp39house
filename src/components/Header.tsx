@@ -6,7 +6,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-import Logo from "../assets/logo.jpg";
+import Logo from "../assets/TheHP39House-logo.jpg";
 import { message, phoneNumber } from "../constants";
 
 const Header = () => {
@@ -19,12 +19,16 @@ const Header = () => {
           <span>Dharamshala Himachal Pardesh (176215)</span>
         </div>
         <div className="social">
+          <span>Contact Us:</span>
+          <span>841587280</span>
+        </div>
+        {/* <div className="social">
           <span>Follow Us :</span>
           <FaFacebookF />
           <FaTwitter />
           <FaLinkedinIn />
           <FaYoutube />
-        </div>
+        </div> */}
       </div>
 
       <nav className="navbar">

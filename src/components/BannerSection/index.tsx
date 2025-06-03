@@ -27,12 +27,13 @@ const BannerSection = () => {
       </div>
 
       <div className="hero-right">
-        <h4 className="subtitle">HOEXR LUXURY Homestay</h4>
+        <h4 className="subtitle">The39 House LUXURY Homestay</h4>
         <h1 className="headline">Most Safe & Rated Homestay in Dharamshala.</h1>
         <p className="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor
-          incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
-          ultrices gravida. Risus commodo maecenas accumsan lacus vel facilisis.
+          Stay with peace of mind at Dharamshala’s top-rated homestay — known
+          for safety, comfort, and heartfelt hospitality. Enjoy cozy rooms,
+          homemade food, and stunning Himalayan views — perfect for families,
+          couples, and solo travelers.
         </p>
         <div className="hero-features">
           <div className="feature">
